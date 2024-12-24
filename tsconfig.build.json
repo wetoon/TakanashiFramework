@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+	"lib": ["ESNext", "DOM", "DOM.Iterable"],
+	"declaration": true,            // Emit type declaration files (.d.ts)
+	"emitDeclarationOnly": true,   // Emit only .d.ts files, not JavaScript
+	"outDir": ".build/dist",        // Output directory for the emitted files
+	"baseUrl": ".",                 // Base directory for resolving non-relative imports
+	"rootDir": "src",               // The root directory of your source files
+	"strict": true,                 // Enable strict type checking
+	"esModuleInterop": true,        // Enable interop between CommonJS and ES modules
+	"skipLibCheck": true,           // Skip type checking for .d.ts files in `node_modules`
+	"moduleResolution": "bundler",    // Use Node.js module resolution
+	"target": "ESNext",             // Specify the target JavaScript version
+	"module": "ESNext"              // Specify the module code generation
+  },
+  "include": ["src/**/*"],          // Include all files in the `src` folder
+  "exclude": ["node_modules", ".build"] // Exclude unnecessary files
+}

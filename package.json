@@ -1,0 +1,18 @@
+{
+  "name": "takanashiframework",
+  "module": "src/index.ts",
+  "type": "module",
+  "script": {
+    "dev": "bun --watch test/index.ts",
+    "build": "bun run build.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.13"
+  }
+}
